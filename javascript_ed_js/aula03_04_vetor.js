@@ -126,7 +126,7 @@ let R = numeros2.every (x=> x>0)
 console.log('todos atendem a regra: ' + R)
 
 // organizar os elementos
-let n_aleatorio = [05,03,01,0,06,02,08,07]
+let n_aleatorio = [10,12,05,03,01,0,06,02,8,7]
 console.log(n_aleatorio)
 n_aleatorio.sort()
 console.log(n_aleatorio)
