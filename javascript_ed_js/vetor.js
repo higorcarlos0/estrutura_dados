@@ -57,10 +57,76 @@ let frutas_sel = frutas_.slice(1,5);
 //console.log(frutas_sel)
 
 //funcao pra alterar ou remover um elemento da array
-//frutas_.splice(1,1)
-//frutas_.splice(2,9,'manga','abacaxi');
+frutas_.splice(1,1)
+frutas_.splice(2,9,'manga','abacaxi');
 
 let r = frutas_.includes('morango')
-console.log(existe)
+//console.log(existe)
 let r1 = frutas_.includes('morangooo')
-console.log(frutas_)
+//console.log(frutas_)
+
+
+let frutas2 = ['laranja', 'melância','morango', 'uva','caju'];
+let texto = frutas2.join(',');
+
+//exibindo o vetor
+
+//console.log(texto);
+
+
+let numeros = [1,2,3,4,5,6];
+let dobra = numeros.map(x=> x*2)
+
+//exibindo o vetor
+console.log(dobra)
+
+//exemplo de função
+function teste(t){
+    console.log(t)
+}
+
+
+let numeros1 = [1,2,3,4,5,6];
+let pares = numeros1.filter(x => x%2 ==0);
+
+//exibindo o vetor
+console.log(pares)
+
+//ternario (if-else simplificado em uma linha)
+let nota = 6
+let res = nota >=6 ? "aprovado":"reprovado"
+console.log(res)
+
+//ou
+
+let res1 = 6;
+if (res1 >= 6){
+    console.log ("aprovado")
+}else{
+    console.log("reprovado")
+}
+
+
+//atraves da função find é retornado o valor do primeiro elemento que satisfaz a função fornecida
+let numeros2 = [1,2,3,4,5,6];
+let localiza_elemento = numeros2.find(x => x > 2);
+let localiza_index = numeros2.findIndex(x => x > 2);
+
+console.log('foi localizado o elemento' + localiza_elemento);
+console.log('foi localizado o index'+ localiza_index);
+
+
+let maior = numeros2.some(x=> x>2)
+console.log(maior)
+
+let maior1 = numeros2.every (x => x > 0);
+console.log('atende a condição lógica: ' + maior1)
+
+let R = numeros2.every (x=> x>0)
+console.log('todos atendem a regra: ' + R)
+
+// organizar os elementos
+let n_aleatorio = [05,03,01,0,06,02,08,07]
+console.log(n_aleatorio)
+n_aleatorio.sort()
+console.log(n_aleatorio)
