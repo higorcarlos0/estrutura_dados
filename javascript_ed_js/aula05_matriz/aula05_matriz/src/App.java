@@ -31,5 +31,6 @@ public class App {
         //matriz com valores preenchidos ou inicializados
         int [][] minha_matriz_v2 = {{1,2},{3,4},{5,6}};
         System.out.println(minha_matriz_v2);
+       
         }
     }
